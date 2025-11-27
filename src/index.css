@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neutral-900: #163a34;
+  --color-neutral-600: #395852;
+  --color-neutral-300: #d0dcd9;
+  --color-neutral-200: #e0e6e3;
+  --color-neutral-100: #f6f5f1;
+  --color-neutral-0: #ffffff;
+
+  --color-orange-500: #fe9f6b;
+  --color-teal-500: #49ac9b;
+  --color-indigo-500: #697ddb;
+  --color-link: #293241;
+  --font-nunito: "Nunito", sans-serif;
+  --font-nunito-sans: "Nunito Sans", sans-serif;
+}
+
+/* -----------------------------------
+   VARIABLE FONT IMPORTS
+------------------------------------ */
+
+/* NUNITO — NORMAL */
+@font-face {
+  font-family: "Nunito";
+  src: url("/src/assets/fonts/Nunito/Nunito-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* NUNITO — ITALIC */
+@font-face {
+  font-family: "Nunito";
+  src: url("/src/assets/fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* NUNITO SANS — NORMAL */
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("/src/assets/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC-opsz-wdth-wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* NUNITO SANS — ITALIC */
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("/src/assets/fonts/Nunito_Sans/NunitoSans-Italic-VariableFont_YTLC-opsz-wdth-wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* TEXT PRESETS */
+
+/* ----------- Text Preset 1 ----------- */
+.tp-1 {
+  font-family: var(--font-nunito);
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 110%;
+  letter-spacing: -2px;
+}
+
+@media (max-width: 1024px) {
+  .tp-1 {
+    font-size: 64px; /* Tablet */
+  }
+}
+
+@media (max-width: 640px) {
+  .tp-1 {
+    font-size: 52px; /* Mobile */
+  }
+}
+
+/* ----------- Text Preset 2 ----------- */
+.tp-2 {
+  font-family: var(--font-nunito);
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -2px;
+}
+
+@media (max-width: 640px) {
+  .tp-2 {
+    font-size: 40px; /* Mobile */
+  }
+}
+
+/* ----------- Text Preset 3 ----------- */
+.tp-3 {
+  font-family: var(--font-nunito);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: -1px;
+}
+
+/* ----------- Text Preset 4 ----------- */
+.tp-4 {
+  font-family: var(--font-nunito);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: -1px;
+}
+
+/* ----------- Text Preset 5 ----------- */
+.tp-5 {
+  font-family: var(--font-nunito);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.5px;
+}
+
+/* ----------- Text Preset 6 ----------- */
+.tp-6 {
+  font-family: var(--font-nunito-sans);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.4px;
+}
+
+/* ----------- Text Preset 7 ----------- */
+.tp-7 {
+  font-family: var(--font-nunito);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -0.3px;
+}
+
+/* ----------- Text Preset 8 ----------- */
+.tp-8 {
+  font-family: var(--font-nunito-sans);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.3px;
+}
+
+/* ----------- Text Preset 9 ----------- */
+.tp-9 {
+  font-family: var(--font-nunito-sans);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.3px;
+}
+
+/* ----------- Text Preset 10 ----------- */
+.tp-10 {
+  font-family: var(--font-nunito-sans);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.3px;
+}
