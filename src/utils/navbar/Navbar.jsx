@@ -18,10 +18,10 @@ function NavBar() {
         </div>
 
         <nav className="nav-links md:hidden hidden lg:flex gap-4">
-          <a href="" className="tp-7 text-neutral-900">
+          <a href="/" className="tp-7 text-neutral-900">
             Home
           </a>
-          <a href="" className="tp-7 text-neutral-900">
+          <a href="/about" className="tp-7 text-neutral-900">
             About
           </a>
           <a href="" className="tp-7 text-neutral-900">

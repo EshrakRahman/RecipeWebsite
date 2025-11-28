@@ -43,7 +43,7 @@
 /* NUNITO SANS — NORMAL */
 @font-face {
   font-family: "Nunito Sans";
-  src: url("/src/assets/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC-opsz-wdth-wght.ttf")
+  src: url("/src/assets/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLCopszwdthwght.ttf")
     format("truetype");
   font-weight: 100 900;
   font-style: normal;
@@ -53,7 +53,7 @@
 /* NUNITO SANS — ITALIC */
 @font-face {
   font-family: "Nunito Sans";
-  src: url("/src/assets/fonts/Nunito_Sans/NunitoSans-Italic-VariableFont_YTLC-opsz-wdth-wght.ttf")
+  src: url("/src/assets/fonts/Nunito_Sans/NunitoSans-Italic-VariableFont_YTLCopszwdthwght.ttf")
     format("truetype");
   font-weight: 100 900;
   font-style: italic;

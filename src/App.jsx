@@ -1,22 +1,22 @@
+import { BrowserRouter, Route, Routes } from "react-router";
 import NavBar from "./utils/navbar/Navbar";
-import Header from "../src/components/header/Header";
-import Features from "../src/components/Features/Features";
-import TwoColumnsSection from "../src/components/Two Columns Section/TwoCloumnsSection";
-import ReadyToCookSection from "../src/components/ReadyToCookSection/ReadyToCookSection";
-import Footer from "../src/components/Footer/Footer";
+import Home from "../src/pages/Home";
+import Footer from "./utils/Footer/Footer";
+import About from "./pages/About";
 
 function App() {
   return (
-    <div className="bg-neutral-100 ">
-      <NavBar />
-      <Header />
-      <main className="lg:mx-25">
-        <Features />
-        <TwoColumnsSection />
-        <ReadyToCookSection />
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className=" bg-neutral-100">
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route />
+        </Routes>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
