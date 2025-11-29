@@ -24,7 +24,7 @@ function NavBar() {
           <a href="/about" className="tp-7 text-neutral-900">
             About
           </a>
-          <a href="" className="tp-7 text-neutral-900">
+          <a href="/recipes" className="tp-7 text-neutral-900">
             Recipe
           </a>
         </nav>
