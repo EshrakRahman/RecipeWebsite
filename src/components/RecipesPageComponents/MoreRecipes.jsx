@@ -1,13 +1,23 @@
 import recipes from "../../../data.json";
 import RecipeCard from "./RecipeCard";
 
-function RecipeList() {
+function MoreRecipes({ id }) {
+  // filter out current recipe
+  const otherRecipes = recipes.filter((r) => r.id !== Number(id));
+
+  // shuffle the array
+  const shuffled = otherRecipes.sort(() => 0.5 - Math.random());
+
+  // pick first 3
+  const randomRecipes = shuffled.slice(0, 3);
+
   return (
-    <>
+    <div>
+      <p className="tp-3 text-neutral-900">More Recipes</p>
+
       <div className="flex flex-col lg:flex-row lg:flex-wrap items-center justify-center gap-4">
-        {recipes.map((item) => (
+        {randomRecipes.map((item) => (
           <RecipeCard
-            id={item.id}
             key={item.id}
             title={item.title}
             desc={item.overview}
@@ -19,8 +29,8 @@ function RecipeList() {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 }
 
-export default RecipeList;
+export default MoreRecipes;
