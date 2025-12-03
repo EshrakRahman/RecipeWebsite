@@ -15,10 +15,11 @@ function MoreRecipes({ id }) {
     <div>
       <p className="tp-3 text-neutral-900">More Recipes</p>
 
-      <div className="flex flex-col lg:flex-row lg:flex-wrap items-center justify-center gap-4">
+      <div className="flex flex-col lg:flex-row  items-center justify-center gap-4">
         {randomRecipes.map((item) => (
           <RecipeCard
             key={item.id}
+            id={item.id}
             title={item.title}
             desc={item.overview}
             imgLarge={item.image.large}

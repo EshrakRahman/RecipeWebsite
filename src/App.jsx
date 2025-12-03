@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"; // ✅ use react-router-dom
+import { BrowserRouter, Route, Routes } from "react-router-dom"; // ✅ correct import
 import NavBar from "./utils/navbar/Navbar";
 import Home from "../src/pages/Home";
 import Footer from "./utils/Footer/Footer";
@@ -11,12 +11,16 @@ function App() {
     <BrowserRouter>
       <div className="bg-neutral-100">
         <NavBar />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+
+          {/* Recipes section */}
           <Route path="/recipes" element={<Recipes />} />
           <Route path="/recipes/:id" element={<RecipeDetails />} />
         </Routes>
+
         <Footer />
       </div>
     </BrowserRouter>
