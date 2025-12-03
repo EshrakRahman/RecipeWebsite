@@ -1,14 +1,17 @@
 function RecipeFilters() {
   return (
-    <div className="filters ">
+    <div className="filters flex p-4 lg:mx-25 flex-col justify-between gap-6 md:flex-row md:items-end md:gap-10">
       {/* Max Prep Time */}
-      <div className="max-prep-time ">
+      <div className="flex flex-col gap-2">
         <label htmlFor="prep-time" className="tp-8 text-neutral-900">
           Max Prep Time
         </label>
 
-        <div className=" ">
-          <select id="prep-time" className="">
+        <div className="flex items-center gap-3">
+          <select
+            id="prep-time"
+            className="border border-neutral-300 rounded-lg px-3 py-2"
+          >
             <option value="0">0 minutes</option>
             <option value="5">5 minutes</option>
             <option value="10">10 minutes</option>
@@ -16,35 +19,48 @@ function RecipeFilters() {
             <option value="20">20 minutes</option>
           </select>
 
-          <button className="">Clear</button>
+          <button className="text-sm text-neutral-600 hover:text-neutral-900">
+            Clear
+          </button>
         </div>
       </div>
 
       {/* Max Cook Time */}
-      <div className="">
-        <label htmlFor="cook-time" className="">
+      <div className="flex flex-col gap-2">
+        <label htmlFor="cook-time" className="tp-8 text-neutral-900">
           Max Cook Time
         </label>
 
-        <div className="">
-          <select id="cook-time" className="">
+        <div className="flex items-center gap-3">
+          <select
+            id="cook-time"
+            className="border border-neutral-300 rounded-lg px-3 py-2"
+          >
             <option value="0">0 minutes</option>
             <option value="5">5 minutes</option>
             <option value="10">10 minutes</option>
             <option value="15">15 minutes</option>
             <option value="20">20 minutes</option>
-            <option className="">Clear</option>
           </select>
+
+          <button className="text-sm text-neutral-600 hover:text-neutral-900">
+            Clear
+          </button>
         </div>
       </div>
 
       {/* Search bar */}
-      <div className="search ">
-        <label className="" htmlFor="search">
+      <div className="flex flex-col gap-2">
+        <label htmlFor="search" className="tp-8 text-neutral-900">
           Search
         </label>
 
-        <input id="search" type="text" placeholder="Tomato" className="" />
+        <input
+          id="search"
+          type="text"
+          placeholder="Tomato"
+          className="border border-neutral-300 rounded-lg px-3 py-2"
+        />
       </div>
     </div>
   );
