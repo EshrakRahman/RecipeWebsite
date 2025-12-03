@@ -1,14 +1,12 @@
 import recipes from "../../../data.json";
 import RecipeCard from "./RecipeCard";
+import { getImage } from "../../utils/getImage";
 
 function MoreRecipes({ id }) {
-  // filter out current recipe
   const otherRecipes = recipes.filter((r) => r.id !== Number(id));
 
-  // shuffle the array
   const shuffled = otherRecipes.sort(() => 0.5 - Math.random());
 
-  // pick first 3
   const randomRecipes = shuffled.slice(0, 3);
 
   return (
@@ -22,8 +20,8 @@ function MoreRecipes({ id }) {
             id={item.id}
             title={item.title}
             desc={item.overview}
-            imgLarge={item.image.large}
-            imgSmall={item.image.small}
+            imgLarge={getImage(item.image.large)}
+            imgSmall={getImage(item.image.small)}
             servings={item.servings}
             prepMinutes={item.prepMinutes}
             cookMinutes={item.cookMinutes}

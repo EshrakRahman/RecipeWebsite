@@ -1,5 +1,6 @@
 import recipes from "../../../data.json";
 import RecipeCard from "./RecipeCard";
+import { getImage } from "../../utils/getImage";
 
 function RecipeList() {
   return (
@@ -11,8 +12,8 @@ function RecipeList() {
             key={item.id}
             title={item.title}
             desc={item.overview}
-            imgLarge={item.image.large}
-            imgSmall={item.image.small}
+            imgLarge={getImage(item.image.large)}
+            imgSmall={getImage(item.image.small)}
             servings={item.servings}
             prepMinutes={item.prepMinutes}
             cookMinutes={item.cookMinutes}

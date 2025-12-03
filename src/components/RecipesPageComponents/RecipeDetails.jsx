@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import imgaa from "../../assets/images/banana-pancakes-small.webp";
+import { getImage } from "../../utils/getImage";
 
 import cookTimeIcon from "../../assets/images/icon-cook-time.svg";
 import prepTimeIcon from "../../assets/images/icon-prep-time.svg";
@@ -25,12 +25,13 @@ function RecipeDetails() {
         <div className="breadcrumbs lg:flex lg:gap-5">
           <div className="img my-4">
             <img
-              src={recipe.image.large}
+              src={getImage(recipe.image.large)}
               alt={recipe.title}
               className="rounded-lg hidden md:block w-full "
             />
+            {/* <img src={getImage(imgSmall)} alt={title} />; */}
             <img
-              src={recipe.image.small}
+              src={getImage(recipe.image.small)}
               alt={recipe.title}
               className="rounded-lg md:hidden w-full "
             />
