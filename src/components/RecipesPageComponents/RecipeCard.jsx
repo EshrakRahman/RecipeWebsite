@@ -7,7 +7,7 @@ import servingIcon from "../../assets/images/icon-servings.svg";
 function RecipeCard({ id, title, desc, imgLarge, imgSmall, ...props }) {
   return (
     <>
-      <div className="mt-6 w-[345px]  md:w-[705px]  lg:w-[375px]   bg-white p-3 rounded-lg flex flex-col gap-4">
+      <div className="mt-6 w-[345px]  md:w-[705px]  lg:w-[375px]    bg-white p-3 rounded-lg flex flex-col gap-4">
         <div className="img flex justify-center ">
           <img
             className="rounded-lg md:hidden lg:block"

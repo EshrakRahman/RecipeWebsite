@@ -1,6 +1,13 @@
-function RecipeFilters() {
+function RecipeFilters({
+  cookTime,
+  prepTime,
+  setCookTime,
+  setPrepTime,
+  search,
+  setSearch,
+}) {
   return (
-    <div className="filters flex p-4 lg:mx-25 flex-col justify-between gap-6 md:flex-row md:items-end md:gap-10">
+    <div className="filters flex p-4 lg:mx-25 flex-col justify-evenly gap-6 md:flex-row md:items-end md:gap-10">
       {/* Max Prep Time */}
       <div className="flex flex-col gap-2">
         <label htmlFor="prep-time" className="tp-8 text-neutral-900">
@@ -11,6 +18,8 @@ function RecipeFilters() {
           <select
             id="prep-time"
             className="border border-neutral-300 rounded-lg px-3 py-2"
+            value={prepTime}
+            onChange={(e) => setPrepTime(e.target.value)}
           >
             <option value="0">0 minutes</option>
             <option value="5">5 minutes</option>
@@ -19,7 +28,10 @@ function RecipeFilters() {
             <option value="20">20 minutes</option>
           </select>
 
-          <button className="text-sm text-neutral-600 hover:text-neutral-900">
+          <button
+            onClick={() => setPrepTime("")}
+            className="text-sm text-neutral-600 hover:text-neutral-900 hover:cursor-pointer "
+          >
             Clear
           </button>
         </div>
@@ -35,6 +47,8 @@ function RecipeFilters() {
           <select
             id="cook-time"
             className="border border-neutral-300 rounded-lg px-3 py-2"
+            value={cookTime}
+            onChange={(e) => setCookTime(e.target.value)}
           >
             <option value="0">0 minutes</option>
             <option value="5">5 minutes</option>
@@ -43,7 +57,10 @@ function RecipeFilters() {
             <option value="20">20 minutes</option>
           </select>
 
-          <button className="text-sm text-neutral-600 hover:text-neutral-900">
+          <button
+            onClick={() => setCookTime("")}
+            className="text-sm text-neutral-600 hover:text-neutral-900 hover:cursor-pointer"
+          >
             Clear
           </button>
         </div>
@@ -60,6 +77,8 @@ function RecipeFilters() {
           type="text"
           placeholder="Tomato"
           className="border border-neutral-300 rounded-lg px-3 py-2"
+          value={search}
+          onChange={(e) => setSearch(e.target.value.toLowerCase())}
         />
       </div>
     </div>
