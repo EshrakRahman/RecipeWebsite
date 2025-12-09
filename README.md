@@ -21,16 +21,6 @@ It allows users to browse, search, and filter recipes with a polished and respon
 ![Frontend Mentor](https://img.shields.io/badge/FrontendMentor-3F54A3?style=for-the-badge&logo=frontendmentor&logoColor=white)
 
 ---
-
-## 🖼 Screenshot
-
-```
-![Desktop index](./src/assets/screenshoots/dektop-i.png)
-![Desktop recipes](./src/assets/screenshoots/desktop-r.png)
-![Tablet recipes](./src/assets/screenshoots/tablet-r.png)
-![Mobile about](./src/assets/screenshoots/mobile-a.png)
-```
-
 ---
 
 ## 🔗 Links
